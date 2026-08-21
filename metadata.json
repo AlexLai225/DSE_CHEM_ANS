@@ -1,0 +1,6 @@
+{
+  "name": "HKDSE Chemistry Answer Keys & Explanations",
+  "description": "Comprehensive answer key checker, facility indices, assessment focuses, and option-by-option explanations for HKDSE Chemistry (2012–2025).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
