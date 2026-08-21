@@ -83,8 +83,8 @@ export const FilterBar: React.FC<FilterBarProps> = ({
               onClick={() => handleDifficultyChange('all')}
               className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center space-x-1 border ${
                 filters.difficulty === 'all'
-                  ? 'bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 border-slate-900 dark:border-slate-100 shadow-xs'
-                  : 'bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 border-slate-200 dark:border-slate-700 hover:border-emerald-500'
+                  ? 'bg-slate-900 text-white border-slate-900 dark:bg-emerald-500 dark:text-slate-950 dark:border-emerald-400 shadow-xs'
+                  : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border-slate-200 dark:border-slate-700 hover:border-emerald-500'
               }`}
             >
               <span>All ({difficultyCounts.all})</span>
@@ -94,8 +94,8 @@ export const FilterBar: React.FC<FilterBarProps> = ({
               onClick={() => handleDifficultyChange('challenging')}
               className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center space-x-1.5 border ${
                 filters.difficulty === 'challenging'
-                  ? 'bg-rose-600 text-white border-rose-600 shadow-xs'
-                  : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-rose-400'
+                  ? 'bg-rose-600 text-white border-rose-600 dark:bg-rose-600 dark:text-white dark:border-rose-500 shadow-xs'
+                  : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border-slate-200 dark:border-slate-700 hover:border-rose-400'
               }`}
               title="Facility Index < 40%"
             >
@@ -107,8 +107,8 @@ export const FilterBar: React.FC<FilterBarProps> = ({
               onClick={() => handleDifficultyChange('moderate')}
               className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center space-x-1.5 border ${
                 filters.difficulty === 'moderate'
-                  ? 'bg-amber-600 text-white border-amber-600 shadow-xs'
-                  : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-amber-400'
+                  ? 'bg-amber-600 text-white border-amber-600 dark:bg-amber-600 dark:text-white dark:border-amber-500 shadow-xs'
+                  : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border-slate-200 dark:border-slate-700 hover:border-amber-400'
               }`}
               title="Facility Index 40% – 70%"
             >
@@ -120,8 +120,8 @@ export const FilterBar: React.FC<FilterBarProps> = ({
               onClick={() => handleDifficultyChange('high')}
               className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center space-x-1.5 border ${
                 filters.difficulty === 'high'
-                  ? 'bg-emerald-600 text-white border-emerald-600 shadow-xs'
-                  : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-emerald-500'
+                  ? 'bg-emerald-600 text-white border-emerald-600 dark:bg-emerald-600 dark:text-white dark:border-emerald-500 shadow-xs'
+                  : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border-slate-200 dark:border-slate-700 hover:border-emerald-500'
               }`}
               title="Facility Index > 70%"
             >

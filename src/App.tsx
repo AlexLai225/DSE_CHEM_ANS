@@ -265,7 +265,7 @@ export default function App() {
 
             {/* Filter Difficulty */}
             <div>
-              <label className="block text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-3">
+              <label className="block text-[10px] font-bold text-slate-400 dark:text-slate-400 uppercase tracking-widest mb-3">
                 Filter by Difficulty
               </label>
               <div className="flex flex-col gap-1.5">
@@ -273,64 +273,64 @@ export default function App() {
                   onClick={() => setFilters({ ...filters, difficulty: 'all' })}
                   className={`flex items-center gap-3 p-2 rounded-lg text-left transition-all border ${
                     filters.difficulty === 'all'
-                      ? 'bg-slate-900 dark:bg-slate-800 text-white border-slate-900 dark:border-slate-700 font-semibold'
-                      : 'bg-white dark:bg-slate-850 border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:border-emerald-500'
+                      ? 'bg-slate-900 text-white border-slate-900 dark:bg-emerald-500 dark:text-slate-950 dark:border-emerald-400 font-bold shadow-xs'
+                      : 'bg-white dark:bg-slate-800/90 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:border-emerald-500 dark:hover:border-emerald-500'
                   }`}
                 >
-                  <span className="text-xs flex-1">All Items</span>
-                  <span className="text-xs font-mono font-bold opacity-75">{difficultyCounts.all}</span>
+                  <span className="text-xs flex-1 font-medium">All Items</span>
+                  <span className="text-xs font-mono font-bold opacity-80">{difficultyCounts.all}</span>
                 </button>
 
                 <button
                   onClick={() => setFilters({ ...filters, difficulty: 'high' })}
                   className={`flex items-center gap-3 p-2 rounded-lg text-left transition-all border ${
                     filters.difficulty === 'high'
-                      ? 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-500 text-emerald-900 dark:text-emerald-200 font-semibold'
-                      : 'bg-white dark:bg-slate-850 border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:border-emerald-500'
+                      ? 'bg-emerald-50 dark:bg-emerald-950/80 border-emerald-500 text-emerald-900 dark:text-emerald-100 font-bold shadow-xs'
+                      : 'bg-white dark:bg-slate-800/90 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:border-emerald-500 dark:hover:border-emerald-500'
                   }`}
                 >
-                  <div className="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></div>
-                  <span className="text-xs flex-1">High Facility (&gt;70%)</span>
-                  <span className="text-xs font-mono font-bold text-emerald-600 dark:text-emerald-400">{difficultyCounts.high}</span>
+                  <div className="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0 shadow-xs"></div>
+                  <span className="text-xs flex-1 font-medium">High Facility (&gt;70%)</span>
+                  <span className="text-xs font-mono font-bold text-emerald-600 dark:text-emerald-300">{difficultyCounts.high}</span>
                 </button>
 
                 <button
                   onClick={() => setFilters({ ...filters, difficulty: 'moderate' })}
                   className={`flex items-center gap-3 p-2 rounded-lg text-left transition-all border ${
                     filters.difficulty === 'moderate'
-                      ? 'bg-amber-50 dark:bg-amber-950/40 border-amber-500 text-amber-900 dark:text-amber-200 font-semibold'
-                      : 'bg-white dark:bg-slate-850 border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:border-amber-500'
+                      ? 'bg-amber-50 dark:bg-amber-950/80 border-amber-500 text-amber-900 dark:text-amber-100 font-bold shadow-xs'
+                      : 'bg-white dark:bg-slate-800/90 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:border-amber-500 dark:hover:border-amber-500'
                   }`}
                 >
-                  <div className="w-2 h-2 rounded-full bg-yellow-400 shrink-0"></div>
-                  <span className="text-xs flex-1">Moderate (40–70%)</span>
-                  <span className="text-xs font-mono font-bold text-amber-600 dark:text-amber-400">{difficultyCounts.moderate}</span>
+                  <div className="w-2.5 h-2.5 rounded-full bg-amber-400 shrink-0 shadow-xs"></div>
+                  <span className="text-xs flex-1 font-medium">Moderate (40–70%)</span>
+                  <span className="text-xs font-mono font-bold text-amber-600 dark:text-amber-300">{difficultyCounts.moderate}</span>
                 </button>
 
                 <button
                   onClick={() => setFilters({ ...filters, difficulty: 'challenging' })}
                   className={`flex items-center gap-3 p-2 rounded-lg text-left transition-all border ${
                     filters.difficulty === 'challenging'
-                      ? 'bg-rose-50 dark:bg-rose-950/40 border-rose-500 text-rose-900 dark:text-rose-200 font-semibold'
-                      : 'bg-white dark:bg-slate-850 border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:border-rose-500'
+                      ? 'bg-rose-50 dark:bg-rose-950/80 border-rose-500 text-rose-900 dark:text-rose-100 font-bold shadow-xs'
+                      : 'bg-white dark:bg-slate-800/90 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:border-rose-500 dark:hover:border-rose-500'
                   }`}
                 >
-                  <div className="w-2 h-2 rounded-full bg-rose-500 shrink-0"></div>
-                  <span className="text-xs flex-1">Challenging (&lt;40%)</span>
-                  <span className="text-xs font-mono font-bold text-rose-600 dark:text-rose-400">{difficultyCounts.challenging}</span>
+                  <div className="w-2.5 h-2.5 rounded-full bg-rose-500 shrink-0 shadow-xs"></div>
+                  <span className="text-xs flex-1 font-medium">Challenging (&lt;40%)</span>
+                  <span className="text-xs font-mono font-bold text-rose-600 dark:text-rose-300">{difficultyCounts.challenging}</span>
                 </button>
               </div>
             </div>
 
             {/* Paper Overview Box */}
-            <div className="p-3.5 bg-slate-900 rounded-xl text-white text-center border border-slate-800 shadow-sm mt-auto">
-              <p className="text-[10px] text-slate-400 uppercase tracking-wider mb-1">
+            <div className="p-3.5 bg-slate-900 dark:bg-slate-850 rounded-xl text-white text-center border border-slate-800 dark:border-slate-700 shadow-sm mt-auto">
+              <p className="text-[10px] text-slate-400 uppercase tracking-wider mb-1 font-semibold">
                 Paper {currentYear} Overview
               </p>
-              <div className="text-xl font-bold font-mono text-emerald-400">
+              <div className="text-xl font-bold font-mono text-emerald-400 dark:text-emerald-300">
                 {filteredQuestions.length} / {rawYearQuestions.length} Questions
               </div>
-              <div className="w-full bg-slate-700 h-1.5 rounded-full mt-2 overflow-hidden">
+              <div className="w-full bg-slate-800 dark:bg-slate-700 h-1.5 rounded-full mt-2 overflow-hidden">
                 <div 
                   className="bg-emerald-500 h-full transition-all duration-300"
                   style={{ width: `${(filteredQuestions.length / (rawYearQuestions.length || 1)) * 100}%` }}

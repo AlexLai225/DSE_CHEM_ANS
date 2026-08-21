@@ -84,28 +84,28 @@ export function getDifficultyBadgeStyle(rate: string) {
   switch (diff) {
     case 'challenging':
       return {
-        bg: 'bg-rose-50 border-rose-200 text-rose-700 dark:bg-rose-950/40 dark:border-rose-800 dark:text-rose-300',
+        bg: 'bg-rose-50 border-rose-200 text-rose-700 dark:bg-rose-950/70 dark:border-rose-700 dark:text-rose-200',
         dot: 'bg-rose-500',
         label: 'Challenging (< 40%)',
         shortLabel: 'Challenging'
       };
     case 'moderate':
       return {
-        bg: 'bg-amber-50 border-amber-200 text-amber-700 dark:bg-amber-950/40 dark:border-amber-800 dark:text-amber-300',
+        bg: 'bg-amber-50 border-amber-200 text-amber-700 dark:bg-amber-950/70 dark:border-amber-700 dark:text-amber-200',
         dot: 'bg-amber-500',
         label: 'Moderate (40–70%)',
         shortLabel: 'Moderate'
       };
     case 'high':
       return {
-        bg: 'bg-emerald-50 border-emerald-200 text-emerald-700 dark:bg-emerald-950/40 dark:border-emerald-800 dark:text-emerald-300',
+        bg: 'bg-emerald-50 border-emerald-200 text-emerald-700 dark:bg-emerald-950/70 dark:border-emerald-700 dark:text-emerald-200',
         dot: 'bg-emerald-500',
         label: 'High Facility (> 70%)',
         shortLabel: 'High Facility'
       };
     case 'deleted':
       return {
-        bg: 'bg-slate-100 border-slate-300 text-slate-600 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400',
+        bg: 'bg-slate-100 border-slate-300 text-slate-600 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-300',
         dot: 'bg-slate-400',
         label: 'Deleted Item',
         shortLabel: 'Deleted'
